@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  # At any commit in dev or main
+  push:
+    branches:
+      - 'main'
+      - 'dev'
+
+jobs:
+  # Build by Maven and check tests
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v1
+      with:
+        java-version: 17
+
+    - name: Build with Maven
+      run: mvn clean package --file pom.xml
