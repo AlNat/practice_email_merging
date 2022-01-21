@@ -1,8 +1,8 @@
 # practice_email_merging
 
-Задача из файла Task.pdf
+![CI](https://github.com/AlNat/practice_email_merging/workflows/CI/badge.svg)
 
-TODO Доделать запуск из консол
+Задача из файла Task.pdf
 
 
 ## Алгоритм
